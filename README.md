@@ -1,4 +1,4 @@
-# Recrutation page with React, SCSS, Bootstrap
+# Recruitment task, web page created with React, Bootstrap and SCSS
 
 In the project directory, you can run:
 
