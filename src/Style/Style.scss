@@ -1,0 +1,524 @@
+@import url(https://fonts.googleapis.com/css?family=Karla);
+@import url(https://use.typekit.net/eeq0hje.css);
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@mixin orangeText() {
+    font-family: 'Khula';
+    font-style: normal;
+    font-weight: 400;
+    color: #EF7925;
+    line-height: 150%;
+}
+
+nav{
+    padding: 10vh;
+    .Logo{
+        padding-left: 10vw;
+    }
+}
+
+
+.header{
+    &__contariner{
+        padding-left: 8vw;
+        h1{
+            
+            font-family: 'Khula';
+            font-style: normal;
+            font-weight: 400;
+            font-family: 'Karla';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 90px;
+            line-height: 110%;
+            letter-spacing: -0.9px;
+            color: #1D1D1B;
+            margin-top: 15vh;
+            max-width: 25vw;
+        }
+        p{
+            padding-top: 2vh;
+            max-width: 25vw;
+            font-family: khula, sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;        
+            color: #1D1D1B;
+        }
+        .buttons{
+            padding-top: 4vh;
+            &__text{
+                &--white{
+                    color: white;
+                }
+                &--orange{
+                    color: #EF7925;
+                }
+            }
+            &__button{
+                background-color: #EF7925;
+                border-radius: 3px;
+                width: 153px;
+                height: 48px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 8px 47px;
+                &--active{
+                    background-color: transparent;
+                    width: auto;
+                }
+                
+                
+                a{
+                    width: 100%;
+                    height: 100%;
+                    font-family: 'Khula';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 32px;
+                    text-align: center;
+                    text-decoration: none;
+                }
+            }
+        }
+
+    }
+
+
+
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(8, 5vw);
+        grid-gap: 10px;
+        &__item{
+            background-image: url("https://picsum.photos/id/0/5616/3744");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;     
+            &--1{
+                grid-column-start: 1;
+                grid-column-end: 6;
+                grid-row-start: 1;
+                grid-row-end: 6;
+            }
+            &--2{
+                grid-column-start: 1;
+                grid-column-end: 6;
+                grid-row-start: 6;
+                grid-row-end: 9;
+            }
+            &--3{
+                grid-column-start: 6;
+                grid-column-end: 10;
+                grid-row-start: 1;
+                grid-row-end: 4;
+            }
+            &--4{
+                grid-column-start: 6;
+                grid-column-end: 10;
+                grid-row-start: 4;
+                grid-row-end: 9;
+            }
+        }
+    
+    }
+}
+
+.Offert__container{
+    margin-top: 5vh;
+    h2{
+        font-family: 'Karla';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 67.5px;
+        line-height: 110%;
+        margin-bottom: 2vh;
+    }
+    .Pricing{
+        @include orangeText();
+        font-size: 28.5px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .UnderH2{
+        @include orangeText();
+        font-size: 16px;
+        color: #1D1D1B;
+    }
+
+    .switch{
+        &__activer {
+            width: 50%;
+            height: 100%;
+            background-color: #EF7925;
+            position:absolute;
+            transition: 1s;                
+            left: 0;
+            border-radius: 1000px;
+            z-index: -100;
+            &--active{
+                transform: translateX(100%);
+            }
+        }
+        &__container{
+            margin-top: 5vh;
+            display: flex;
+            width: 200px;
+            height: 5vh;
+            justify-content: space-between;
+            align-items: center;
+            padding: 4px;
+            box-sizing: border-box;
+            border: 1px solid #EDEDED;
+            border-radius: 1000px;
+            cursor: pointer;
+            position: relative;
+            transition: 1s;
+           
+            p{
+                padding: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 0;
+                @include orangeText();
+                font-size: 14px;
+                line-height: 100%;
+                letter-spacing: 0.02em;
+                text-transform: uppercase;
+                color: #EF7925;
+                transition: 2s;
+                &:last-child{
+                    padding-right: 25px;
+                }
+                
+            }
+            .p__active{
+                color: white;
+            }
+            
+        }
+    }
+
+
+    .cards{
+        margin: 10vh auto;
+        width: 70vw;
+        display: flex;
+        text-align: left;
+        justify-content: space-between;
+        flex-grow: 3;
+        flex-wrap: wrap;
+        &__underText{
+            font-family: 'Khula';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+        }
+        .card{
+            box-sizing: border-box;
+            width: 32%;
+            padding: 8vh 2vw;
+            &--dark{
+                background-color: #F8F8F8;
+            }
+            &__title{
+                @include orangeText();
+                font-size: 21.5px;
+                color: #1D1D1B;
+            }
+            &__cost{
+                font-family: 'Karla';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 50.5px;
+                line-height: 115%;
+                letter-spacing: -0.4px;
+                margin-bottom: 0;
+                color: #1D1D1B;
+            }
+            &__mounth{
+                font-family: 'Khula';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 150%;
+                color: #1D1D1B;
+            }
+            &__button{
+                font-family: 'Khula';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 32px;
+                background-color: #EF7925;
+                border: none;
+                width: 80%;
+                text-align: center;
+                margin: 3vh auto 0;
+            }
+            .line{
+                border-bottom: 1px solid;
+                width: 100%;
+                height: 10px;
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                list-style: url("../img/Ok.svg");
+               margin: 0;
+               padding: 16px;
+               border-bottom: 1px solid #EDEDED;
+               &:last-of-type{
+                   border-bottom: none;
+               }
+            }
+        }
+    }
+}
+.gallery{
+    margin-bottom: 3vh;
+    
+    &__orangeText{
+        @include orangeText();
+        font-size: 21.5px;
+    }
+    &__title{
+        font-family: 'Karla';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28.5px;
+        line-height: 120%;
+        color: #1D1D1B;
+    }
+    .gallery{
+        
+        &__slider{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        &__galleryBox{
+            cursor: pointer;
+            box-sizing: border-box;
+            margin-top: 5vh;
+            width: 45%;
+        }
+        &__dots
+        {
+            display: flex;
+            justify-content: space-around;
+            width: 10vw;
+            margin-top: 2vh;
+            align-items: center;
+            &--dot{
+                cursor: pointer;
+                color: #F1F1F1;
+                font-size: 2rem;
+                &:last-of-type{
+                    display: none;
+                }
+                
+            }
+            &--active{
+                color: #EF7925;
+            }
+        }
+    }
+    &__lightBox{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(27, 27, 27, 0.541);
+        display: flex;
+        align-items: center;
+        & img{
+            display: block;
+            max-width: 60%;
+            max-height: 80%;
+            margin: 60px auto;
+            box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.5);
+
+        }
+        &>span{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 30px;
+            color: #ffffff;
+            z-index: 999;
+            cursor: pointer;
+        }
+    }
+}
+footer{
+    background-color: #121212;
+    height: 40vh;
+    align-content: space-between;
+    .footer__coppy{
+        @include orangeText();
+        color: #807E7E;
+        line-height: 171%;
+        font-size: 14px;
+    }
+}
+
+$breakpoint-smalMonitor: 1200px;
+$breakpoint-extraSmalMonitor: 940px;
+$breakpoint-tablet: 740px;
+@media (min-width: $breakpoint-extraSmalMonitor) and (max-width: $breakpoint-smalMonitor) {
+    .header{
+        .gallery{
+            grid-template-rows: repeat(8, 7vw);
+    }
+    
+    }
+    .Offert__container{
+        .cards{
+            width: 90vw;
+        }
+    }
+}
+@media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-extraSmalMonitor) and (orientation: portrait) {
+    .header{
+        .gallery{
+            grid-template-rows: repeat(8, 7vw);
+            margin: 5vh auto;
+    }
+        &__contariner{
+            h1{
+               margin-top: 3vh;
+         }
+         p{
+            max-width: 50vw;
+            width: auto;
+         }
+        
+         }
+    
+    }
+    .Offert__container{
+        .cards{
+            margin-bottom: 2vh!important;
+            width: 95vw;
+                .card{
+                    &__title{
+                        font-size: 18px;
+                    }
+                    &__cost{
+                        font-size: 45px;
+                    }
+                }
+        }
+    }
+    .gallery{
+        .gallery{
+            
+            &__dots
+            {
+                &--dot{
+                    font-size: 3rem;
+            }
+        }
+        }
+    }
+}
+@media (min-width: 319px) and (max-width: $breakpoint-tablet) and (orientation: portrait) {
+    
+    .header{
+        overflow: hidden;
+        .gallery{
+            grid-template-rows: repeat(8, 10vw);
+            grid-template-columns: repeat(9, 1fr);
+            margin: 5vh auto;
+    }
+        &__contariner{
+            &>div{
+                display: block;
+                width: 100%;
+                h1{
+                    margin-top: 4vh;
+                    font-size: 60px;
+                 }
+                 p{
+                    max-width: 90vw;
+                     width: auto;
+                 }
+            }
+         }
+    }
+    .Offert__container{
+        .Pricing{
+            font-size: 22px;
+        }
+        h2{
+            font-size: 35px;
+        }
+        .UnderH2{
+            font-size: 14px;
+        }
+        .cards{
+           
+            &__underText{
+                padding: 10px!important;
+            }
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-right: 0;
+            .card{
+                width: 90%;
+                padding: 10%;
+                margin-bottom: 4vh;
+                    &__title{
+                        font-size: 25px;
+                        margin-bottom: 0;
+                    }
+                    &__cost{
+                        font-size: 45px;
+                    }
+                    .Offert__container--flex{
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        height: 40%;
+                    }
+                    ul{
+                        width: 50%;
+                        li{
+                            font-size: 12px;
+                        }
+                    }
+                }
+        }
+    }
+    .gallery{
+        &__orangeText{
+            font-size: 18px;
+        }
+        .gallery{
+            
+            &__dots
+            {
+                &--dot{
+                    font-size: 3rem;
+            }
+        }
+        }
+    }
+}
+
+
