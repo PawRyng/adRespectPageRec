@@ -363,8 +363,8 @@ nav{
     }
 }
 footer{
+    overflow: hidden;
     background-color: #121212;
-    height: 40vh;
     align-content: space-between;
     .footer__coppy{
         @include orangeText();
@@ -375,7 +375,7 @@ footer{
 }
 
 $breakpoint-smalMonitor: 1200px;
-$breakpoint-extraSmalMonitor: 940px;
+$breakpoint-extraSmalMonitor: 1000px;
 $breakpoint-tablet: 740px;
 @media (min-width: $breakpoint-extraSmalMonitor) and (max-width: $breakpoint-smalMonitor) {
     .header{

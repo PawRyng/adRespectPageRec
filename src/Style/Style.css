@@ -461,8 +461,8 @@ nav .Logo {
 }
 
 footer {
+  overflow: hidden;
   background-color: #121212;
-  height: 40vh;
   -ms-flex-line-pack: justify;
       align-content: space-between;
 }
@@ -478,7 +478,7 @@ footer .footer__coppy {
   font-size: 14px;
 }
 
-@media (min-width: 940px) and (max-width: 1200px) {
+@media (min-width: 1000px) and (max-width: 1200px) {
   .header .gallery {
     -ms-grid-rows: (7vw)[8];
         grid-template-rows: repeat(8, 7vw);
@@ -488,7 +488,7 @@ footer .footer__coppy {
   }
 }
 
-@media (min-width: 740px) and (max-width: 940px) and (orientation: portrait) {
+@media (min-width: 740px) and (max-width: 1000px) and (orientation: portrait) {
   .header .gallery {
     -ms-grid-rows: (7vw)[8];
         grid-template-rows: repeat(8, 7vw);
