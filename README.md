@@ -1,4 +1,4 @@
-# Recrutation page with eact
+# Recrutation page with React, SCSS, Bootstrap
 
 In the project directory, you can run:
 
