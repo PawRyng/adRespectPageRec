@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/adRespectRecrutation/static/css/main.7a85d1a6.css",
-    "main.js": "/adRespectRecrutation/static/js/main.0491f533.js",
-    "static/js/787.0a0a7238.chunk.js": "/adRespectRecrutation/static/js/787.0a0a7238.chunk.js",
-    "static/media/Logo.svg": "/adRespectRecrutation/static/media/Logo.861aa5bc38a3d9d38d59c37b4ae63515.svg",
-    "static/media/logoWhite.svg": "/adRespectRecrutation/static/media/logoWhite.e5ae889a8bcca72071fe09f99e9ebf62.svg",
-    "index.html": "/adRespectRecrutation/index.html",
-    "static/media/arrowMenue.svg": "/adRespectRecrutation/static/media/arrowMenue.2910f56b17ec9b425f63601bcf618318.svg",
-    "static/media/glass.svg": "/adRespectRecrutation/static/media/glass.18ed00fe41043cbc4681a1dea17d7c2c.svg",
-    "static/media/Ok.svg": "/adRespectRecrutation/static/media/Ok.fa5295e8a9bee5f4a33a.svg",
-    "main.7a85d1a6.css.map": "/adRespectRecrutation/static/css/main.7a85d1a6.css.map",
-    "main.0491f533.js.map": "/adRespectRecrutation/static/js/main.0491f533.js.map",
-    "787.0a0a7238.chunk.js.map": "/adRespectRecrutation/static/js/787.0a0a7238.chunk.js.map"
+    "main.css": "/adRespectPageRec/static/css/main.96e74af5.css",
+    "main.js": "/adRespectPageRec/static/js/main.f92ad907.js",
+    "static/js/787.0a0a7238.chunk.js": "/adRespectPageRec/static/js/787.0a0a7238.chunk.js",
+    "static/media/Logo.svg": "/adRespectPageRec/static/media/Logo.861aa5bc38a3d9d38d59c37b4ae63515.svg",
+    "static/media/logoWhite.svg": "/adRespectPageRec/static/media/logoWhite.e5ae889a8bcca72071fe09f99e9ebf62.svg",
+    "index.html": "/adRespectPageRec/index.html",
+    "static/media/arrowMenue.svg": "/adRespectPageRec/static/media/arrowMenue.2910f56b17ec9b425f63601bcf618318.svg",
+    "static/media/glass.svg": "/adRespectPageRec/static/media/glass.18ed00fe41043cbc4681a1dea17d7c2c.svg",
+    "static/media/Ok.svg": "/adRespectPageRec/static/media/Ok.fa5295e8a9bee5f4a33a.svg",
+    "main.96e74af5.css.map": "/adRespectPageRec/static/css/main.96e74af5.css.map",
+    "main.f92ad907.js.map": "/adRespectPageRec/static/js/main.f92ad907.js.map",
+    "787.0a0a7238.chunk.js.map": "/adRespectPageRec/static/js/787.0a0a7238.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a85d1a6.css",
-    "static/js/main.0491f533.js"
+    "static/css/main.96e74af5.css",
+    "static/js/main.f92ad907.js"
   ]
 }
